@@ -1,21 +1,67 @@
 /*bg-head*/
 .bg-head {
     background-color: #2F303A;
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)), 
-        url(../images/bg.jpg);
+    // background-image: linear-gradient(
+    //     rgba(47, 48, 58, 0.4),
+    //     rgba(47, 48, 58, 0.4)), 
+    //     url(../images/bg.jpg);
     background-repeat: no-repeat;
     background-size: auto;
     margin: auto;
     background-position: center;
     background-size: cover;
-    max-width: 1600px;
+    width: 100%;
     height: 600px;
-
     
-}
-.bg-head__contant {
+    @media screen and (max-width: 767px) {
+        background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), 
+        url(/images/header-mob-1x.jpg);
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), 
+        url(/images/header-mob-2x.jpg);
+        }
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url(/images/header-tablet-x1.jpg);
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+                url(/images/header-tablet-x2.jpg);
+        }
+     }
+    @media screen and (min-width:1200px) {
+            background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), 
+            url(../images/bg.jpg);
+                padding-top: 200px;
+                height: 600px;
+                max-width: 1600px;
+                text-align: center;
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), 
+                url(../images/bg.jpg);
+                }
+        }
+    }
+
+&__contant {
     text-align: center; 
     padding-top: 200px;
     padding-bottom: 200px; 
@@ -37,7 +83,7 @@
     color: #FFFFFF;
 
 }
-.bg-head__button {
+&__button {
     padding: 10px 32px;
     font-family: 'Roboto';
     font-weight: 700;
@@ -63,5 +109,6 @@
     outline-color: rgba(255, 255, 255, 0);
     outline-offset: 15px;
     text-shadow: 1px 1px 2px #427388; 
+    }
 }
 }
