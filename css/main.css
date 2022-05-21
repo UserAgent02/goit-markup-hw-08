@@ -455,6 +455,10 @@ ul, ol {
   color: var(--main-text-color);
 }
 
+.client-block {
+  display: flex;
+}
+
 .clients-logo-icon:not(:last-child) {
   margin-right: 30px;
 }
