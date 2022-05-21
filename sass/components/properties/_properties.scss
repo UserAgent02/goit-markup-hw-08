@@ -1,0 +1,44 @@
+/*properties*/
+.properties {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.properties-list {
+    list-style: none;
+    display: flex;
+}
+
+.properties-item .properties-icon{
+    content: '';
+    display: flex;
+    height: 120px;
+    width: 270px;
+    background: #F5F4FA;
+    justify-content: center;
+
+    border-radius: 4px;
+    margin-bottom: 30px;
+    padding: 25px 0;
+}
+.properties-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.properties-title {
+    width: 270px;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+}
+.properties-text {
+    width: 270px;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--secondary-link-color);
+}

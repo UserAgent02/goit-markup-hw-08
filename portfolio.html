@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href="./css/test.css"> -->
+    <link rel="stylesheet" href="./css/main.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <div class="border">
+        <div class="container">
+            <!--logo-->
+            <a href="./index.html" class="logo"><span class="logo-color">Web</span>Studio</a>
+            <!--links header-->
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-items"><a class="nav-link" href="./index.html">Студия</a></li>
+                    <li class="nav-items"><a class="nav-link current" href="./portfolio.html" >Портфолио</a></li>
+                    <li class="nav-items"><a class="nav-link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <!--contacts links-->
+            
+            <ul class="nav-contact">
+                <li class="contact-items"><a href="mailto:info@devstudio.com" class="nav-mail"><svg class="mail-icon">
+                    <use href="images/symbol-defs.svg#icon-envelope-1"></use>
+                </svg>info@devstudio.com</a></li>
+                <li class="contact-items"><a href="tel:+380961111111" class="nav-tel"><svg class="tel-icon">
+                    <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                </svg>+38 096 111 11 11</a></li>
+            </ul>
+            
+        </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="portfolio">
+        <section class="container">
+        <!--hidden H1-->
+            <h1 class="hidden">Портфолио страницы</h1>
+            <!--radio-btn-->
+                <ul class="radio-button-list">
+                    <li class="radio-button-items"><button type="button" class="button">Все</button></li>
+                    <li class="radio-button-items"><button type="button" class="button">Веб-сайты</button></li>
+                    <li class="radio-button-items"><button type="button" class="button">Приложения</button></li>
+                    <li class="radio-button-items"><button type="button" class="button">Дизайн</button></li>
+                    <li class="radio-button-items"><button type="button" class="button">Маркетинг</button></li>
+                </ul>
+        </section>
+        <!--cards-->
+        <section class="container">
+                <ul class="cards-list">
+                    <li class="cards-items">
+                        <a href="#" class="cards-link"> 
+                            <div class="cards-items-image">
+                                <img class="img-portfolio" src="./images/img.jpg" alt="Технокряк" width="370" height="294">
+                                <div class="cards-items-image-overlay">
+                                    <p class="cards-items-image-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>
+                            <div class="cards-text">
+                                <h2 class="cards-title">Технокряк</h2>
+                                <p class="cards-sub-title">Веб-сайт</p>
+                            </div>    
+                        </a>
+                    </li>
+                    <li class="cards-items">
+                        <a href="#" class="cards-link">
+                            <div class="cards-items-image">
+                                <img class="img-portfolio" src="./images/img-1.jpg" alt="Технокряк" width="370" height="294">
+                                <div class="cards-items-image-overlay">
+                                    <p class="cards-items-image-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>
+                            <div class="cards-text">
+                                <h2 class="cards-title">Постер New Orlean vs Golden Star</h2>
+                                <p class="cards-sub-title">Дизайн</p>
+                            </div>    
+                    </a>
+                    </li>
+                    <li class="cards-items">
+                        <a href="#" class="cards-link">
+                            <div class="cards-items-image">
+                                <img class="img-portfolio" src="./images/img-2.jpg" alt="Технокряк" width="370" height="294">
+                                <div class="cards-items-image-overlay">
+                                    <p class="cards-items-image-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>
+                            <div class="cards-text">
+                                <h2 class="cards-title">Ресторан Seafood</h2>
+                                <p class="cards-sub-title">Приложение</p>
+                            </div>
+                    </a>
+                    </li>
+                    <li class="cards-items">
+                        <a href="#" class="cards-link">
+                            <div class="cards-items-image">
+                                <img class="img-portfolio" src="./images/img-3.jpg" alt="Технокряк" width="370" height="294">
+                                <div class="cards-items-image-overlay">
+                                    <p class="cards-items-image-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>
+                            <div class="cards-text">
+                                <h2 class="cards-title">Проект Prime</h2>
+                                <p class="cards-sub-title">Маркетинг</p>
+                            </div>    
+                    </a>
+                    </li>
+                    <li class="cards-items">
+                        <a href="#" class="cards-link">
+                            <div class="cards-items-image">
+                                <img class="img-portfolio" src="./images/img-4.jpg" alt="Технокряк" width="370" height="294">
+                                <div class="cards-items-image-overlay">
+                                    <p class="cards-items-image-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>
+                            <div class="cards-text">
+                                <h2 class="cards-title">Проект Boxes</h2>
+                                <p class="cards-sub-title">Приложение</p>
+                            </div>    
+                    </a>
+                    </li>
+                    <li class="cards-items">
+                        <a href="#" class="cards-link">
+                            <div class="cards-items-image">
+                                <img class="img-portfolio" src="./images/img-5.jpg" alt="Технокряк" width="370" height="294">
+                                <div class="cards-items-image-overlay">
+                                    <p class="cards-items-image-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>
+                            <div class="cards-text">
+                                <h2 class="cards-title">Inspiration has no Borders</h2>
+                                <p class="cards-sub-title">Веб-сайт</p>
+                            </div>    
+                    </a>
+                    </li>
+                    <li class="cards-items">
+                        <a href="#" class="cards-link">
+                            <div class="cards-items-image">
+                                <img class="img-portfolio" src="./images/img-6.jpg" alt="Технокряк" width="370" height="294">
+                                <div class="cards-items-image-overlay">
+                                    <p class="cards-items-image-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>
+                            <div class="cards-text">
+                                <h2 class="cards-title">Издание Limited Edition</h2>
+                                <p class="cards-sub-title">Дизайн</p>
+                            </div>    
+                    </a>
+                    </li>
+                    <li class="cards-items">
+                        <a href="#" class="cards-link">
+                            <div class="cards-items-image">
+                                <img class="img-portfolio" src="./images/img-7.jpg" alt="Технокряк" width="370" height="294">
+                                <div class="cards-items-image-overlay">
+                                    <p class="cards-items-image-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>
+                            <div class="cards-text">
+                                <h2 class="cards-title">Проект LAB</h2>
+                                <p class="cards-sub-title">Маркетинг</p>
+                            </div>    
+                    </a>
+                    
+                    </li>
+                    <li class="cards-items">
+                        <a href="#" class="cards-link">
+                            <div class="cards-items-image">
+                                <img class="img-portfolio" src="./images/img-8.jpg" alt="Технокряк" width="370" height="294">
+                                <div class="cards-items-image-overlay">
+                                    <p class="cards-items-image-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>
+                            <div class="cards-text">
+                                <h2 class="cards-title">Growing Business</h2>
+                                <p class="cards-sub-title">Приложение</p>
+                            </div>    
+                    </a>
+                    </li>
+                </ul>
+        </section>  
+        </div>
+        
+    </main>     
+    <!--footer-->
+    <footer>
+        <div class="footer">  
+            <div class="container footer-conatainer">
+                <!--address-->
+                <div class="address-footer">
+                    <a class="logo-footer" href="./index.html"><span class="logo-color">Web</span><span class="footer-logo-color">Studio</span></a>
+                    <address class="footer-address">
+                        <ul>
+                            <li class="footer-items"><p class="footer-text">г. Киев, Бульвар Леси Украинки, д. 26,</p></li>
+                            <li class="footer-items"><a href="mailto:info@devstudio.com" class="footer-mail">info@devstudio.com</a></li>
+                            <li class="footer-items"><a href="tel:+380961111111" class="footer-tel">+38 096 111 11 11</a></li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="social-footer">
+                    <h2 class="social-footer-text">Присоединяйтесь</h2>
+                    <ul class="soc-footer-list">
+                        <li class="soc-footer-item"><a href="" class="soc-footer-link">
+                            <svg class="soc-footer-icon" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                            </svg>
+                        </a></li>
+                        <li class="soc-footer-item"><a href="" class="soc-footer-link">
+                            <svg class="soc-footer-icon" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                            </svg>
+                        </a></li>
+                        <li class="soc-footer-item"><a href="" class="soc-footer-link">
+                            <svg class="soc-footer-icon" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                            </svg>
+                        </a></li>
+                        <li class="soc-footer-item"><a href="" class="soc-footer-link">
+                            <svg class="soc-footer-icon" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                            </svg>
+                        </a></li>
+                    </ul>
+                </div>  
+                <div class="form-footer" autocomplete="on">
+                    <h2 class="form-footer-text">Подпишитесь на рассылку</h2>
+                        <form class="soc-footer-list">
+                            <input class="footer-email-input" type="email" placeholder="E-mail" name="enter email">
+                            <button class="footer-button" type="button">Подписаться
+                                <svg class="form-footer-icon" width="24" height="24">
+                                    <use href="images/symbol-defs.svg#icon-send"></use>
+                                </svg>
+                            </button>
+                        </form>    
+                </div>   
+            </div>
+        </div>
+      </footer>
+</body>
+</html>
