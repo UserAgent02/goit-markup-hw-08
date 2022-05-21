@@ -945,7 +945,7 @@ ul, ol {
   margin-left: 70px;
 }
 
-.social-footer.social-footer-text {
+.social-footer .social-footer-text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -991,13 +991,13 @@ ul, ol {
   position: relative;
 }
 
-.form-footer.form-footer-text {
+.form-footer .form-footer-text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--background-color-white);
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
