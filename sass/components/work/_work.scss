@@ -1,32 +1,37 @@
 /*work*/
 .work {
-    padding-bottom: 94px;
+    @media screen and (max-width: 1199px) {
+        display: none;
+     }
+ padding-top: 0;
+ padding-bottom: 94px;
 }
 .work-title {
     margin-bottom: 50px;
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
+    // display: wrap;
 }
 .work-list {
     list-style: none;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
 
 }
 .work-items {
     position: relative;
+    display: block;
+    width: 370px;
+    height: 294px;
     &:not(:last-child) {
         margin-right: 30px;
     }   
-}
-.work-list .work-items {
-    width: 370px;
-    height: 294px;
-
 }
 .work-items-overlay {
     position: absolute;
