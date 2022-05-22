@@ -330,17 +330,53 @@ ul, ol {
 }
 
 /*properties*/
-.properties {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (max-width: 1199px) {
+  .properties {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .properties {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .properties-list {
   list-style: none;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.properties-item .properties-icon {
+@media screen and (max-width: 767px) {
+  .properties-item {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .properties-item {
+    flex-basis: calc((100% - 2 *30px)/2);
+  }
+  .properties-item:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .properties-item {
+    flex-basis: calc((100% - 4 * 30px)/4);
+    flex-wrap: nowrap;
+  }
+  .properties-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.properties-icon {
   content: '';
   display: flex;
   height: 120px;
@@ -352,8 +388,32 @@ ul, ol {
   padding: 25px 0;
 }
 
-.properties-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 767px) {
+  .properties-icon {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .properties-icon {
+    justify-content: center;
+    flex-basis: calc((100% - 2 *30px)/2);
+  }
+  .properties-icon:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .properties-icon {
+    justify-content: center;
+    flex-basis: calc((100% - 4 * 30px)/4);
+    flex-wrap: nowrap;
+  }
+  .properties-icon:nth-child(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .properties-title {
@@ -368,12 +428,24 @@ ul, ol {
   color: var(--main-text-color);
 }
 
+@media screen and (max-width: 767px) {
+  .properties-title {
+    text-align: center;
+  }
+}
+
 .properties-text {
   width: 270px;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--secondary-link-color);
+}
+
+@media screen and (max-width: 1199px) {
+  .properties-text {
+    margin-bottom: 30px;
+  }
 }
 
 /*work*/

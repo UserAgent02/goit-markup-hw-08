@@ -1,14 +1,54 @@
 /*properties*/
 .properties {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @media screen and (max-width: 1199px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
 }
 .properties-list {
     list-style: none;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.properties-item .properties-icon{
+.properties-item {
+  @media screen and (max-width: 767px) {
+      width: 100%;
+      
+  }  
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+      
+      flex-basis: calc((100% - 2 *30px)/2);
+      &:nth-child(2n+1) {
+          margin-right: 30px;
+      }
+  }
+  @media  screen and (min-width: 1200px) {
+      
+      flex-basis: calc((100% - 4 * 30px)/4);
+      flex-wrap: nowrap;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+  }
+  
+}
+
+
+
+
+
+
+
+
+ .properties-icon{
     content: '';
     display: flex;
     height: 120px;
@@ -19,11 +59,27 @@
     border-radius: 4px;
     margin-bottom: 30px;
     padding: 25px 0;
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        justify-content: center;
+    }  
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        justify-content: center;
+        flex-basis: calc((100% - 2 *30px)/2);
+        &:nth-child(2n+1) {
+            margin-right: 30px;
+        }
+    }
+    @media  screen and (min-width: 1200px) {
+        justify-content: center;
+        flex-basis: calc((100% - 4 * 30px)/4);
+        flex-wrap: nowrap;
+        &:nth-child(:last-child)
+        {
+            margin-right: 30px;
+        }
+    }
 }
-.properties-item:not(:last-child) {
-    margin-right: 30px;
-}
-
 .properties-title {
     width: 270px;
     margin-bottom: 10px;
@@ -34,6 +90,9 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-text-color);
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
 }
 .properties-text {
     width: 270px;
@@ -41,4 +100,7 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--secondary-link-color);
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 30px;
+    }
 }
