@@ -13,10 +13,8 @@
 }
 
 /*logo*/
-.header__logo-color{
-    color: var(--main-color);
-}
-.header__logo, .logo-footer{
+
+.header__logo{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -28,6 +26,25 @@
     padding-bottom: 25px;
     margin-right: 93px;
 
+&-color{
+    color: var(--main-color);
+}
+// @media screen and (max-width: 767px) {
+//     display: none;
+//  } 
+ @media screen and (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin: 0;
+    }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 1.17;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-left: 0;
+    margin-right: auto;
+ }   
 }
 /*contact link*/
 
@@ -35,9 +52,22 @@
     display: flex;
     
 }
+.header-nav-all {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
 
-.header-nav__items:not(:last-child) {
-    margin-right: 50px;
+.header-nav__items {
+    display: block;
+      &:not(:last-child) {
+        @media screen and (min-width: 768px){
+            margin-right: 50px;
+        }
+        
+    } 
 
 }
 
@@ -69,20 +99,51 @@
     bottom: 0;
     background-color: var(--main-color);
     transition-duration: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    }
+    @media screen and (max-width: 767px) {
+        display: none;
+        }
 }
 }
-
 /* .nav-contact-list {
     display: flex;
     margin-left: auto;
 } */
 .header-contact {
-    display: flex;
-    margin-left: auto;
-    &__items:not(:last-child) {
-        margin-right: 50px;
-    }
+    // display: flex;
+    // margin-left: auto;
+    // &__items:not(:last-child) {
+    //     margin-right: 50px;
+    // }
+    @media screen and (max-width: 1199px) {  
+        margin-left: 84px;
+        }
+        @media screen and (min-width: 1200px) {  
+        display: flex;
+        margin-left: 305px;
+        align-items: center;
+        justify-content: center;
+        
+        }
 }
+
+
+.header-contact__items {
+    display: block;
+    @media screen and (max-width: 1199px) {
+    &:not(:last-child){
+        margin-bottom: 10px;
+    }}
+    @media screen and (min-width: 1200px) {
+        &:not(:last-child){
+            margin-right: 30px;
+        }}
+    @media screen and (max-width: 767px) {
+            display: none;
+            }    
+}
+
 
 .header-contact__mail {
     font-weight: 500;
