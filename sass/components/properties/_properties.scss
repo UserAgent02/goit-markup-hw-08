@@ -93,6 +93,7 @@
     color: var(--main-text-color);
     @media screen and (max-width: 767px) {
         text-align: center;
+        width: 100%;
     }
 }
 .properties-text {
@@ -103,5 +104,6 @@
     color: var(--secondary-link-color);
     @media screen and (max-width: 1199px) {
         margin-bottom: 30px;
+        width: 100%;
     }
 }

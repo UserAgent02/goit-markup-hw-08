@@ -498,6 +498,7 @@ ul, ol {
 @media screen and (max-width: 767px) {
   .properties-title {
     text-align: center;
+    width: 100%;
   }
 }
 
@@ -512,6 +513,7 @@ ul, ol {
 @media screen and (max-width: 1199px) {
   .properties-text {
     margin-bottom: 30px;
+    width: 100%;
   }
 }
 
