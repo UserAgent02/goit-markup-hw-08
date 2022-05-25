@@ -779,7 +779,7 @@ img {
 
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .clients-logo-list {
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
@@ -1644,14 +1644,14 @@ img {
   padding: 15px 16px;
 }
 
-.footer-email-input:hover, .footer-email-input:focus {
-  color: var(--main-color);
-}
-
 @media screen and (max-width: 1199px) {
   .footer-email-input {
     margin-bottom: 20px;
   }
+}
+
+.footer-email-input:hover, .footer-email-input:focus {
+  color: var(--main-color);
 }
 
 .footer-button {
