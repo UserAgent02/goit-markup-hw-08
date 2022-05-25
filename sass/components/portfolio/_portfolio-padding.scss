@@ -1,5 +1,23 @@
 /*Portfolio*/
+// .portfolio {
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+// }
+
 .portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @media screen and (max-width: 1199px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @media screen and (max-width: 1199px) {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        }
+    
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    background-color: var(--background-color-white);
 }
