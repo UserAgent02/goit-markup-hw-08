@@ -355,7 +355,6 @@ img {
 
 @media screen and (max-width: 1199px) {
   .bg-head__title {
-    width: 360px;
     font-size: 26px;
     line-height: 1.62;
     margin: auto;
@@ -1642,6 +1641,13 @@ img {
   background: transparent;
   color: var(--background-color-white);
   padding: 15px 16px;
+}
+
+@media screen and (max-width: 479px) {
+  .footer-email-input {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
 @media screen and (max-width: 1199px) {
