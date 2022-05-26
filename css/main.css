@@ -1803,7 +1803,6 @@ img {
   margin-bottom: 32px;
 }
 
-/*прячем контакты при растяжке экрана*/
 .mobile-contact__link {
   font-family: 'Roboto';
   font-weight: 500;
