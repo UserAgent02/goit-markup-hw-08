@@ -918,13 +918,15 @@ img {
 
 @media screen and (max-width: 479px) {
   .modal {
-    width: 100%;
+    width: 90%;
     height: 609px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     overflow: hidden;
     overflow-y: scroll;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -1071,10 +1073,12 @@ img {
 .modal-field-checkbox {
   margin-top: 20px;
   position: relative;
-  display: flex;
   width: 100%;
   height: 24px;
   align-items: center;
+  display: block;
+  justify-content: center;
+  text-align: center;
 }
 
 .modal-check-box {
@@ -1180,7 +1184,6 @@ img {
 
 .modal-text {
   position: absolute;
-  display: block;
   width: 401px;
   font-family: 'Roboto';
   font-style: normal;
@@ -1189,26 +1192,27 @@ img {
   color: var(--main-text-color);
 }
 
-@media screen and (max-width: 1199px) {
-  .modal-text {
-    margin-left: 8px;
-    font-size: 12px;
-    line-height: 1.17;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .modal-text {
-    left: 36px;
+    left: 30px;
     font-size: 14px;
     line-height: 1.71;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1199px) {
   .modal-text {
-    width: 230px;
-    left: 50px;
+    width: 346px;
+    margin-left: -8px;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .modal-text {
+    width: 346px;
+    left: 38px;
     font-size: 12px;
     line-height: 1.17;
   }
@@ -1216,6 +1220,7 @@ img {
 
 .modal-link {
   color: var(--main-color);
+  padding-left: 3px;
   cursor: pointer;
   text-decoration: underline;
 }
@@ -1225,7 +1230,6 @@ img {
 }
 
 .modal-button {
-  position: absolute;
   left: 165px;
   width: 200px;
   height: 50px;
@@ -1238,6 +1242,8 @@ img {
   letter-spacing: 0.06em;
   color: var(--background-color-white);
   cursor: pointer;
+  position: absolute;
+  bottom: 40px;
 }
 
 .modal-button :hover {
@@ -1246,6 +1252,25 @@ img {
   outline-color: rgba(255, 255, 255, 0);
   outline-offset: 15px;
   text-shadow: 1px 1px 2px #427388;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal-button {
+    left: 125px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-button {
+    left: 165px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .modal-button {
+    left: 50%;
+    transform: translate(-50%);
+  }
 }
 
 /*Portfolio*/
